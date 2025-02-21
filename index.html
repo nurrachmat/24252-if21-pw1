@@ -11,6 +11,122 @@
     <h1>Selamat datang</h1>
     <p>Hari ini belajar Github, HTML, dan Deploy ke Vercel</p>
     <p>Belajar web menyenangkan</p>
+
+    <!-- ini komentar, tidak ditampilkan pada browser -->
+    <!-- heading 1 sd 6 -->
+    <h1>Judul</h1>
+    <h2>Judul</h2>
+    <h3>Judul</h3>
+    <h4>Judul</h4>
+    <h5>Judul</h5>
+    <h6>Judul</h6>
+
+    <!-- gambar -->
+    <img src="images/banner.webp" alt="Banner" width="100%"> 
+
+    <!-- link -->
+    <a href="https://mdp.co.id">MDP IT Store</a> <br>
+    <a href="https://mdp.ac.id" target="_blank">Univ MDP</a> <br>
+
+    <!-- link gambar contoh sosmed/play store -->
+    <a href="https://play.google.com/store/apps" target="_blank">
+        <img src="images/google-play.webp" alt="Unduh Aplikasi">
+    </a>
+
+    <!-- tabel -->
+    <table border="1">
+        <!-- baris -->
+         <tr>
+            <!-- kolom -->
+             <td>Nama</td>
+             <td>NPM</td>
+             <td>Email</td>
+             <td>Foto</td>
+         </tr>
+         <tr>
+            <td>Kolin</td>
+            <td>001</td>
+            <td>kolin@test.com</td>
+            <td><img src="images/user.png" alt="" width="80px"></td>
+         </tr>
+    </table>
+
+    <h2>Colpan</h2>
+    <table border="1">
+        <!-- 2 kolom pada baris pertama digabung -->
+         <tr>
+            <td colspan="2">Jenis Kelamin</td>
+         </tr>
+         <tr>
+            <td>Laki</td>
+            <td>Perempuan</td>
+         </tr>
+    </table>
+
+    <h2>Rowspan</h2>
+    <table border="1">
+        <!-- 2 baris pada kolom pertama digabung -->
+         <tr>
+            <td rowspan="2">IF21</td>
+            <td>Owen</td>
+         </tr>
+         <tr>
+            <td>Herni</td>
+         </tr>
+    </table>
+
+    <h2>Latihan</h2>
+    <table border="1">
+        <tr>
+            <td rowspan="2">No</td>
+            <td rowspan="2">Nama</td>
+            <td colspan="3">Nilai</td>
+        </tr>
+        <tr>
+            <td>UTS</td>
+            <td>UAS</td>
+            <td>Tugas</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Ahmad</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Michael</td>
+            <td>80</td>
+            <td>80</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td colspan="2">Rata-rata</td>
+            <td>90</td>
+            <td>90</td>
+            <td>90</td>
+        </tr>
+    </table>
+
+    <h2>Formulir</h2>
+    <form action="proses.php" method="post">
+        Nama <br>
+        <input type="text" name="nama" id="nama" required> <br>
+        Email <br>
+        <input type="email" name="email" id="email" required> <br>
+        Jenis Kelamin <br>
+        <input type="radio" name="jk" id="" value="L" checked> Laki
+        <input type="radio" name="jk" id="" value="P"> Perempuan <br>
+        Tempat Lahir <br>
+        <select name="tempat_lahir" id="tempat_lahir">
+            <option value="PLB">Palembang</option>
+            <option value="JKT">Jakarta</option>
+        </select> <br>
+        Tanggal Lahir <br>
+        <input type="date" name="tanggal_lahir" id="tanggal_lahir"> <br>
+        <button type="submit">Simpan</button>
+    </form>
 </body>
 
 </html>
