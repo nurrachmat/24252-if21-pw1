@@ -1,0 +1,71 @@
+/* element selector */
+body {
+    background-color: #fff000;
+    font-family: 'calibri';
+}
+
+/* class selector */
+.text-danger {
+    color: red;
+}
+
+.bg-success {
+    background-color: green;
+}
+
+.text-warning {
+    color: yellow;
+}
+
+.bg-primary {
+    background-color: blue;
+}
+
+.p-1 {
+    padding: 10px;
+}
+
+.m-1 {
+    margin: 10px;
+}
+
+.rounded {
+    border-radius: 20px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: green;
+    /* text-decoration: underline; */
+    background-color: white;
+    border-radius: 2px;
+    padding: 2px;
+}
+
+table {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.form-control {
+    width: 100%;
+}
+
+.btn-primary {
+    margin-top: 10px;
+    background-color: blue;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    border-radius: 10px;
+}
+
+.btn-primary:hover {
+    background-color: green;
+}
