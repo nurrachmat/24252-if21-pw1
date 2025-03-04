@@ -1,6 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
 /* style hp */
 body {
     background-color: red;
+}
+
+img {
+    width: 100%;
+}
+
+.p-2 {
+    padding: 20px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 /* style tablet */
@@ -11,7 +29,12 @@ body {
 
     .col-md-6 {
         width: 50%;
-        background-color: yellow;
+        /* background-color: yellow; */
+        float: left;
+    }
+
+    .col-md-12 {
+        width: 100%;
         float: left;
     }
 }
@@ -24,6 +47,12 @@ body {
 
     .col-lg-3 {
         width: 25%;
+        background-color: yellow;
+        float: left;
+    }
+
+    .col-lg-4 {
+        width: 33.33%;
         background-color: yellow;
         float: left;
     }
