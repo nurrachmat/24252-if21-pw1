@@ -17,5 +17,12 @@ function detail(kode) {
         console.log(data);
         document.getElementById('desa').innerHTML = data.lokasi.desa;
         document.getElementById('kecamatan').innerHTML = data.lokasi.kecamatan;
+
+        data.data[0].cuaca.forEach( (item) => {
+            console.log(item);
+            item.forEach( (cuaca) => {
+                document.getElementById("list-cuaca").innerHTML += `<li>${cuaca.weather_desc}</li>`
+            })
+        } )
     } )
 }
