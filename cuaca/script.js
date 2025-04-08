@@ -10,6 +10,8 @@ fetch("https://24252-if21-pw1-omega.vercel.app/javascript/wilayah.json")
 
 function detail(kode) {
     console.log(kode);
+    // clear element 
+    document.getElementById("list-cuaca").innerHTML = "";
     // akses API cuaca BMKG berdasarkan kode wilayah desa/kelurahan
     fetch(`https://api.bmkg.go.id/publik/prakiraan-cuaca?adm4=${kode}`)
     .then( response => response.json() )
@@ -21,7 +23,7 @@ function detail(kode) {
         data.data[0].cuaca.forEach( (item) => {
             console.log(item);
             item.forEach( (cuaca) => {
-                document.getElementById("list-cuaca").innerHTML += `<li>${cuaca.weather_desc}</li>`
+                document.getElementById("list-cuaca").innerHTML += `<li>${cuaca.utc_datetime} - ${cuaca.weather_desc} <img src='${cuaca.image}' class='rounded'></li>`
             })
         } )
     } )
